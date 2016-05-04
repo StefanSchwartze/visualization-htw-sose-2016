@@ -1,0 +1,39 @@
+/*
+ * Main Sass File
+ *
+ * @author Stefan Schwartze
+ */
+
+// Variables
+@import "helpers/vars.sass"
+@import "helpers/vendor.sass"
+
+// Basic styles
+@import "helpers/base.sass"
+
+// Components
+@import "components/section-elements.sass"
+
+.section
+	&.overview
+		background: #394963
+		background: #DFE9F2
+		margin-top: calc(4rem + 3px)
+		.section_content
+			padding: 0
+	&.elements
+		.section_content
+			padding-left: 0
+			padding-right: 0
+.chart-container
+	overflow: hidden
+	max-width: 420px
+	text-align: center
+	margin: auto
+	.canvas1
+	h3
+		text-align: center
+.center
+	text-align: center
+	width: 100%
+	display: inline-block

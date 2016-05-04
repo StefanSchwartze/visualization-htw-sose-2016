@@ -1,0 +1,49 @@
+/*
+ * Sass Component: Base Settings
+ *
+ * @author Stefan Schwartze
+ */
+
+html
+	min-width: 100%
+	position: absolute
+
+// Body
+body
+	color: black
+	margin: 0
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	width: 100%
+	position: absolute
+	background: white
+	color: $text_gray
+	font-family: Source Sans Pro
+	font-weight: lighter
+
+body *
+	@include box-sizing(border-box)
+
+a
+	color: black
+	border: 0
+	outline: 0
+	@include transition(all .5s)
+	&:hover
+		cursor: pointer
+		opacity: 0.6
+		filter: alpha(opacity=60)
+p
+	font-size: 1rem
+
+h1
+	font-size: 2rem
+
+img
+	max-width: 100%
+
+.dark-on-light
+	@include font-smoothing(off)
+
+.light-on-dark
+	@include font-smoothing(on)

@@ -1,0 +1,135 @@
+/* Main Sass File
+ *
+ * @author Stefan Schwartze
+ */
+/* Sass Mixin: Variables
+ *
+ * @author Stefan Schwartze
+ */
+/*$superlight_grey: #efefef */
+/* Sass Mixin: Vendor
+ *
+ * @author Stefan Schwartze
+ */
+/* Sass Component: Base Settings
+ *
+ * @author Stefan Schwartze
+ */
+html {
+  min-width: 100%;
+  position: absolute; }
+
+body {
+  color: black;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  position: absolute;
+  background: white;
+  color: #333333;
+  font-family: Source Sans Pro;
+  font-weight: lighter; }
+
+body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  color: black;
+  border: 0;
+  outline: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  a:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    filter: alpha(opacity=60); }
+
+p {
+  font-size: 1rem; }
+
+h1 {
+  font-size: 2rem; }
+
+img {
+  max-width: 100%; }
+
+.dark-on-light {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto; }
+
+.light-on-dark {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Sass Component: Section-Elements
+ *
+ * @author Stefan Schwartze
+ */
+.section {
+  position: relative;
+  width: 100%; }
+
+.section_content {
+  position: relative;
+  margin: auto;
+  max-width: 960px;
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+  width: 100%; }
+  .section_content .section_content_heading_small .fa {
+    margin-right: 1rem; }
+
+.row {
+  width: 100%; }
+  .row.row3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 320px;
+    padding: 0 1rem; }
+  .row .col {
+    width: 100%;
+    float: left; }
+    .row .col > img {
+      float: left;
+      position: relative; }
+  .row .col2 {
+    width: 50%; }
+    .row .col2:first-child {
+      padding-right: 0.5rem; }
+    .row .col2:last-child {
+      padding-left: 0.5rem; }
+  .row .col34 {
+    width: 75%; }
+  .row .col14 {
+    width: 25%; }
+
+.chart {
+  margin: 1rem; }
+
+@media only screen and (max-width: 560px) {
+  .section_content {
+    padding: 0.5rem; } }
+.section.overview {
+  background: #394963;
+  background: #dfe9f2;
+  margin-top: calc(4rem + 3px); }
+  .section.overview .section_content {
+    padding: 0; }
+.section.elements .section_content {
+  padding-left: 0;
+  padding-right: 0; }
+
+.chart-container {
+  overflow: hidden;
+  max-width: 420px;
+  text-align: center;
+  margin: auto; }
+  .chart-container h3 {
+    text-align: center; }
+
+.center {
+  text-align: center;
+  width: 100%;
+  display: inline-block; }
